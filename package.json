@@ -2,6 +2,7 @@
   "name": "hi-elysia",
   "version": "1.0.50",
   "scripts": {
+    "start": "bun run src/server.ts",
     "dev": "bun run --watch src/server.ts"
   },
   "dependencies": {
