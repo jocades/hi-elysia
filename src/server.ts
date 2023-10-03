@@ -30,7 +30,7 @@ app.get('/health', (ctx) => {
   }
 })
 
-app.use(trpc(appRouter)).listen(8000)
+app.use(trpc(appRouter)).listen(process.env.PORT!)
 
 console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`,
